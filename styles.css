@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0c0c0c;
+    color: #f0f0f0;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Light Theme */
+  body.light-theme {
+    background: #e4e6e9;
+    color: #212529;
+  }
+  
+  .navbar-dark.bg-gradient {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+  }
+  
+  .premium-card {
+    padding: 3rem;
+    border-radius: 20px;
+    background: #1e2327;
+    color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  body.light-theme .premium-card {
+    background:#212529;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-gradient {
+    background:#1e2327;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+  
+  .text-muted {
+    color: #7f8c8d !important;
+  }
+  
+  .text-primary {
+    color: #3498db !important;
+  }
+  
+  .text-primary.fw-bold {
+    font-weight: bold;
+  }
+  
+  .btn-outline-primary {
+    border-color: #3498db;
+    color: #3498db;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Hover Effects */
+  .premium-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  /* General Styles */
+
+  body.light-theme {
+    background: #e4e6e9;
+    color: #212529;
+  }
+  
+  .navbar-dark.bg-gradient {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+  }
+  
+  .premium-card {
+    padding: 3rem;
+    border-radius: 20px;
+    background: #1e2327;
+    color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  body.light-theme .premium-card {
+    background: #ffffff;
+    color: #212529;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(45deg, #ff6600, #ff9966);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-muted {
+    color: #7f8c8d !important;
+  }
+  
+  .text-primary {
+    color: #3498db !important;
+  }
+  
+  .text-primary.fw-bold {
+    font-weight: bold;
+  }
+  
+  .btn-outline-primary {
+    border-color: #3498db;
+    color: #3498db;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Stopwatch Circle */
+  .stopwatch-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: #222;
+  }
+  
+  #stopwatch-time {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    width: 100px;
+    margin: 5px;
+  }
+  
+  /* Countdown Timer */
+  #countdown-display {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  #countdown-display.active {
+    color: #3498db;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  /* General Styles */
+
+  body.light-theme {
+    background: #e4e6e9;
+    color: #212529;
+  }
+  
+  .navbar-dark.bg-gradient {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+  }
+  
+  .premium-card {
+    padding: 3rem;
+    border-radius: 20px;
+    background: #1a1a1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .calculator-display {
+    background-color: #333;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+  }
+  
+  .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .calculator-buttons button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background: #444;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .calculator-buttons button:hover {
+    background: #666;
+  }
+  
+  .history {
+    margin-top: 20px;
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .history-list {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+  
+  .history-item {
+    color: #ff6347;
+  }
+  
+  /* Buttons for Unit Conversion & Other Features (add later) */
+  
+

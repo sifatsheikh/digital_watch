@@ -165,3 +165,63 @@ document.addEventListener("DOMContentLoaded", () => {
     // Event Listener for Countdown
     startCountdownButton.addEventListener("click", startCountdown);
   });
+
+
+
+
+
+
+
+
+
+
+
+
+  // Functionality for Basic Calculator
+let display = document.getElementById("calc-display");
+
+function appendToDisplay(value) {
+  display.value += value;
+}
+
+function clearDisplay() {
+  display.value = "";
+}
+
+function calculateResult() {
+  try {
+    display.value = eval(display.value);
+    addToHistory(display.value);
+  } catch (e) {
+    display.value = "Error";
+  }
+}
+
+// Functionality for Scientific Calculator
+let scientificDisplay = document.getElementById("scientific-display");
+
+function appendToScientificDisplay(value) {
+  scientificDisplay.value += value;
+}
+
+function calculateScientificResult() {
+  try {
+    scientificDisplay.value = eval(scientificDisplay.value);
+    addToHistory(scientificDisplay.value);
+  } catch (e) {
+    scientificDisplay.value = "Error";
+  }
+}
+
+// History Panel
+function addToHistory(result) {
+  let historyList = document.getElementById("history-list");
+  let historyItem = document.createElement("li");
+  historyItem.classList.add("list-group-item");
+  historyItem.textContent = result;
+  historyList.prepend(historyItem);
+}
+
+
+
+
